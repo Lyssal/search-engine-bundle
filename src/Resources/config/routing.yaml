@@ -1,0 +1,3 @@
+lyssal_searchengine:
+    resource: '@LyssalSearchEngineBundle/Controller'
+    type: 'annotation'

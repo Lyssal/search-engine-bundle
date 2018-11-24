@@ -1,0 +1,22 @@
+{
+    "name": "lyssal/search-engine-bundle",
+    "description": "Using external search engines (like Qwant or Google) to add a search form in your project.",
+	"license" : "MIT",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Rémi Leclerc",
+            "homepage": "http://www.lyssal.com/"
+        }
+    ],
+    "require": {
+      "lyssal/search-engine": "~0.1",
+      "symfony/form": "^4",
+      "symfony/framework-bundle": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lyssal\\SearchEngineBundle\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{{ form_start(form) }}
+    <div class="input-group mb-3">
+        {{ form_widget(form.query, { 'attr': { 'class': 'form-control' } }) }}
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-outline-secondary">{{ lyssal_searchengine_submitvalue() }}</button>
+        </div>
+    </div>
+    {{ form_rest(form.query) }}
+{{ form_end(form) }}

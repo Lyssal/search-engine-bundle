@@ -1,10 +1,6 @@
 # The Lyssal search engine bundle
 
-
-The Lyssal SEO bundle permits you to use the Page entity for all your URLs and SEO informations (as title, description, author, etc ; see the Page and Website properties).
-
-The slugs are automatically generated and you can use the Twig templates to autoamtically generate the meta tags.
-
+The Lyssal search engine bundle permits you to generate a form using external search engines (like Qwant or Google).
 
 ## Available search engines
 
@@ -26,35 +22,28 @@ The slugs are automatically generated and you can use the Twig templates to auto
 
 Loot at `Lyssal\SearchEngine\Engine\SearchEngine` for labels to use for each search engine.
 
+To generate the form:
+
+```twig
+{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form')) -}}
+```
+
+
 ## Installation
 
 Read the [installation documentation](doc/Installation.md).
 
 
-## How to use
+## Specify a search engine
 
-Read the [How to use documentation](doc/HowToUse.md).
-
-
-## The sitemap.xml
-
-Read the [sitemap documentation](doc/Sitemap.md).
+To specify the search engine to use, read the [Search engine documentation](doc/SearchEngine.md).
 
 
-## About properties
+## The template
 
-Read the [properties documentation](doc/Properties.md).
-
-
-## EasyAdmin
-
-If you use EasyAdmin, please read the [EasyAdmin documentation](doc/EasyAdmin.md).
+To know how to use the template, read the [Template documentation](doc/Template.md).
 
 
-## PhpDoc
+## The website
 
-Execute :
-
-```sh
-phpdoc -c doc/phpdoc.tpl.xml
-```
+To specify the website in which we search, read the [Website documentation](doc/Website.md).

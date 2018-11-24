@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Lyssal\SearchEngineBundle\:
+        resource: '../../{Form,Twig}'
+
+    Lyssal\SearchEngineBundle\Twig\Extension\SubmitValueExtension:
+        bind:
+            $submitValue: '%lyssal_search_engine.submit_value%'
+        tags:
+            - { name: 'twig.extension' }
