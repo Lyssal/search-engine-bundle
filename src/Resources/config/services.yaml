@@ -7,6 +7,12 @@ services:
     Lyssal\SearchEngineBundle\:
         resource: '../../{Form,Twig}'
 
+    Lyssal\SearchEngineBundle\Twig\Extension\FormExtension:
+        bind:
+            $httpKernelRuntime: '@twig.runtime.httpkernel'
+        tags:
+            - { name: 'twig.extension' }
+
     Lyssal\SearchEngineBundle\Twig\Extension\SubmitValueExtension:
         bind:
             $submitValue: '%lyssal_search_engine.templating.submit_value%'

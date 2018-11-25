@@ -8,5 +8,5 @@ By default, the search uses the current host.
 You can define an other website specifying the `website` parameter:
 
 ```twig
-{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form', { 'website': 'www.lyssal.net' })) -}}
+{{- lyssal_searchengine_display({ 'website': 'www.lyssal.net' }) -}}
 ```

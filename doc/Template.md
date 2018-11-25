@@ -5,7 +5,7 @@
 ### Call the form in the template
 
 ```twig
-{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form')) -}}
+{{- lyssal_searchengine_display() -}}
 ```
 
 ### Specifify a specific template
@@ -29,7 +29,7 @@ Or you can specify the `template` parameter:
 
 For example:
 ```twig
-{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form', { 'template': 'foundation_6' })) -}}
+{{- lyssal_searchengine_display({ 'template': 'foundation_6' }) -}}
 ```
 
 

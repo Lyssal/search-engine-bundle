@@ -25,7 +25,7 @@ Loot at `Lyssal\SearchEngine\Engine\SearchEngine` for labels to use for each sea
 To generate the form:
 
 ```twig
-{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form')) -}}
+{{- lyssal_searchengine_display() -}}
 ```
 
 

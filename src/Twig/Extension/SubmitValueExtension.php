@@ -44,7 +44,7 @@ class SubmitValueExtension extends Twig_Extension
 
 
     /**
-     * Get the submit value
+     * Get the submit value.
      *
      * @return string The submit value
      */

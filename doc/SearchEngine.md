@@ -15,5 +15,5 @@ lyssal_search_engine:
 Specify the `searchEngine` parameter:
 
 ```twig
-{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form', { 'searchEngine': 'google' })) -}}
+{{- lyssal_searchengine_display({ 'searchEngine': 'google' }) -}}
 ```
