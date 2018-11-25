@@ -1,18 +1,21 @@
 # The template
 
-## Call the form in the template
+## The form template
+
+### Call the form in the template
 
 ```twig
 {{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form')) -}}
 ```
 
-## Specifify a specific template
+### Specifify a specific template
 
-Specify the `template` parameter:
+In your config:
 
-For example:
-```twig
-{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form', { 'template': 'foundation_6' })) -}}
+```yaml
+lyssal_search_engine:
+    templating:
+        form_template: 'foundation_6'
 ```
 
 Available templates are:
@@ -21,3 +24,21 @@ Available templates are:
 * `foundation_6`
 
 If you want to use your own template, you can simply overload `@LyssalSearchEngineBundle/search/form/default.html.twig`.
+
+Or you can specify the `template` parameter:
+
+For example:
+```twig
+{{- render(controller('Lyssal\\SearchEngineBundle\\Controller\\SearchController:form', { 'template': 'foundation_6' })) -}}
+```
+
+
+## Define the submit button value
+
+In your config:
+
+```yaml
+lyssal_search_engine:
+    templating:
+        submit_value: 'OK'
+```

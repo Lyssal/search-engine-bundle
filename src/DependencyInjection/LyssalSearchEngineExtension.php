@@ -24,8 +24,12 @@ class LyssalSearchEngineExtension extends Extension
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
-        $container->setParameter('lyssal_search_engine.default_search_engine', $config['default_search_engine']);
-        $container->setParameter('lyssal_search_engine.submit_value', $config['submit_value']);
+
+        $container->setParameter('lyssal_search_engine.search_engine.default', $config['search_engine']['default']);
+        $container->setParameter('lyssal_search_engine.host.search_on_host', $config['host']['search_on_host']);
+        $container->setParameter('lyssal_search_engine.host.default', $config['host']['default']);
+        $container->setParameter('lyssal_search_engine.templating.form_template', $config['templating']['form_template']);
+        $container->setParameter('lyssal_search_engine.templating.submit_value', $config['templating']['submit_value']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yaml');

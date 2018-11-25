@@ -6,7 +6,8 @@ Change your configuration:
 
 ```yaml
 lyssal_search_engine:
-    default_search_engine: 'qwant'
+    search_engine:
+        default: 'qwant'
 ```
 
 ## Specifify an other search engine in the template

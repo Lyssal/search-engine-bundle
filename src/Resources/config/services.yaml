@@ -9,6 +9,6 @@ services:
 
     Lyssal\SearchEngineBundle\Twig\Extension\SubmitValueExtension:
         bind:
-            $submitValue: '%lyssal_search_engine.submit_value%'
+            $submitValue: '%lyssal_search_engine.templating.submit_value%'
         tags:
             - { name: 'twig.extension' }
